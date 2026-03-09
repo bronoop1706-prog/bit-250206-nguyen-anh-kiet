@@ -1,0 +1,20 @@
+print("Các số từ 17 đến 111:")
+for i in range(111, 16, -1):
+    print(i)
+
+print("Các số nguyên tố từ 17 đến 111:")
+
+
+for a in range(17, 112):
+    prime = True
+
+    if a < 2:
+        prime = False
+    else:
+        for i in range(2, a):
+            if a % i == 0:
+                prime = False
+                break
+
+    if prime:
+        print(a)
